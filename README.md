@@ -16,24 +16,28 @@ Only when we have favorite items could we recommend events for users. We recomme
 ## structures
 ### database schema
 Table users:
+
 | user_id | password | first_name | last_name |
-| :---: | :---: | :---: | :---: |
-| 1111 | 2222 | John | Smith|
+|---------|----------|------------|-----------|
+| 1111    | 2222     | John       | Smith     |
 
 Table items:
-| item_id | name | rating | address | image_url | url | distance |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1718vfG65OjF0A9 | 387 Music Presents: | 0 | Los Angeles | image_url | url | 4.79|
+
+| item_id         | name               | rating | address     | image_url | url | distance |
+|-----------------|--------------------|--------|-------------|-----------|-----|----------|
+| 1718vfG65OjF0A9 | 387 Music Presents | 0      | Los Angeles | image_url | url | 4.79     |
 
 Table category:
-| item_id | category | 
-| :---: | :---: |
-| 1718vfG65OjF0A9 | music |
+
+| item_id         | category |
+|-----------------|----------|
+| 1718vfG65OjF0A9 | music    |
 
 Table history:
-| user_id | item_id | last_favor_time |
-|| :---: | :---: | :---: |
-| 1111 | 1718vfG65OjF0A9 | 2018-08-18 16:03:03 |
+
+| user_id | item_id         | last_favor_time     |
+|---------|-----------------|---------------------|
+| 1111    | 1718vfG65OjF0A9 | 2018-08-18 16:03:03 |
 ### API format
 login: ./login
 
